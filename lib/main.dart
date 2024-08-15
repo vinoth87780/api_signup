@@ -1,5 +1,4 @@
-import 'package:api_signup/screen/home_screen.dart';
-import 'package:api_signup/screen/login_screen.dart';
+import 'package:api_signup/registration_page/signup_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -11,15 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Registration Example',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      initialRoute: '/',
-      routes: {
-        '/': (context) => LoginScreen(),
-        '/home': (context) => HomePage(),
-      },
+      home: RegistrationPage(),
     );
   }
 }
